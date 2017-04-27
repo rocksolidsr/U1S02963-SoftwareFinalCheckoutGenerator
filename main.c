@@ -11,7 +11,7 @@
 //							  Added delay after PLL is turned on to allow more time for system to lock
 //							  Added a counter to ensure that the over voltage / over current is a “real” threat
 //							  Made it so that if a restart occurs it does not try to relock at full power
-
+//	02	| 04 27 2017 | S.R. | Updated the frequency window to be 19500 - 21775, because some transducer were having higher Fr's
 //################################################################################################################################################################################################
 #include "DSP2833x_EPwm_defines.h"
 #include "DSP2833x_Device.h"
@@ -22,7 +22,7 @@
 // Code to insert application version into flash of DSP for bootloader purposes
 #ifndef DEBUG
 	#pragma DATA_SECTION(appVersion,"version");
-	const Uint32 appVersion = 0x00000001;
+	const Uint32 appVersion = 0x00000002;
 #endif
 //################################################################################################################################################################################################
 //						Prototype statements for functions found within this file.
